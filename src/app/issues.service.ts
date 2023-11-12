@@ -8,7 +8,9 @@ import { issues } from '../assets/mock-issues';
 export class IssuesService {
   private issues: Issue[] = [];
 
-  constructor() {}
+  constructor() {
+    this.issues = issues;
+  }
 
   getPendingIssues(): Issue[] {
     return this.issues.filter((issue) => !issue.completed);
