@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IssueListComponent } from './issue-list/issue-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ClarityModule, BrowserAnimationsModule],
+  imports: [CommonModule, RouterOutlet, ClarityModule, IssueListComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
